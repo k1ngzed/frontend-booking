@@ -1,0 +1,23 @@
+.textarea
+  display: inline-block
+  width: 100%
+  min-height: 200px
+  padding: 7px 12px
+  line-height: 18px
+  outline: 0
+  border: none
+  color: $color-text-primary
+  background: $bg-color-white
+  border-radius: $border-radius-base
+  border: 1px solid $color-secondary
+  resize: auto
+  &::-webkit-input-placeholder,
+  &:-ms-input-placeholder,
+  &::placeholder
+    color: $color-text-secondary
+    opacity: 1
+  &:focus
+    border-color: $color-primary
+  &:disabled
+    cursor: default
+    background: #efefef

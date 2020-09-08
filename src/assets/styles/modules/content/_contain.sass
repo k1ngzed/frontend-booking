@@ -1,0 +1,55 @@
+.container
+  max-width: 1200px
+  margin: 0 auto
+  // margin: 0 4%
+  // @media #{$mq-medium}
+  //   margin: 0 8%
+  // @media #{$mq-large}
+  //   margin: 0 12%
+  // @media #{$mq-xlarge}
+  //   margin: 0 18%
+
+
+.container-fluid
+  width: 100%
+
+// .grid
+//   .grid-wrapper 
+//     .grid-cell .grid-col-X
+$grid-margin: 7.5px
+.grid // parent
+  width: 100%
+  margin: 0 auto
+  padding: .1px 0
+  &-wrapper // inner-parent
+    display: flex
+    flex-wrap: wrap
+    margin: 0 -#{$grid-margin}
+  &-cell // child in inner-parent
+    margin: 0 $grid-margin $grid-margin*2
+  &-col // child in inner-parent
+    &-1
+      width: calc(8.333333% - #{$grid-margin*2})
+    &-2
+      width: calc(16.666667% - #{$grid-margin*2})
+    &-3
+      width: calc(25% - #{$grid-margin*2})
+    &-4
+      width: calc(33.333333% - #{$grid-margin*2})
+    &-5
+      width: calc(41.666667% - #{$grid-margin*2})
+    &-6
+      width: calc(50% - #{$grid-margin*2})
+    &-7
+      width: calc(58.333333% - #{$grid-margin*2})
+    &-8
+      width: calc(66.666667% - #{$grid-margin*2})
+    &-9
+      width: calc(75% - #{$grid-margin*2})
+    &-10
+      width: calc(83.333333% - #{$grid-margin*2})
+    &-11
+      width: calc(91.666667% - #{$grid-margin*2})
+    &-12
+      width: calc(100% - #{$grid-margin*2})
+// .grid end

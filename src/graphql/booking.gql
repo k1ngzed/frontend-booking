@@ -1,0 +1,14 @@
+query booking {
+  booking {
+    _id
+    name
+    phone
+    email
+    room
+    date
+    time
+    description
+    createdAt
+    updatedAt
+  }
+}
